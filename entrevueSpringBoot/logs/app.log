@@ -1,0 +1,8 @@
+2023-01-11 13:12:50,420 INFO com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] Starting EntrevueSpringBootApplication using Java 17.0.4.1 on DESKTOP-7DA1F6I with PID 13240 (C:\Users\MAISON\git\monrepo\entrevueSpringBoot\target\classes started by MAISON in C:\Users\MAISON\git\monrepo\entrevueSpringBoot)
+2023-01-11 13:12:50,430 DEBUG com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] Running with Spring Boot v2.5.8, Spring v5.3.14
+2023-01-11 13:12:50,430 INFO com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] No active profile set, falling back to default profiles: default
+2023-01-11 13:12:55,926 INFO com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] Started EntrevueSpringBootApplication in 6.168 seconds (JVM running for 7.211)
+2023-01-11 13:13:22,316 INFO com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] Starting EntrevueSpringBootApplication using Java 17.0.4.1 on DESKTOP-7DA1F6I with PID 15364 (C:\Users\MAISON\git\monrepo\entrevueSpringBoot\target\classes started by MAISON in C:\Users\MAISON\git\monrepo\entrevueSpringBoot)
+2023-01-11 13:13:22,323 DEBUG com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] Running with Spring Boot v2.5.8, Spring v5.3.14
+2023-01-11 13:13:22,324 INFO com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] No active profile set, falling back to default profiles: default
+2023-01-11 13:13:28,410 INFO com.example.entrevueSpringBoot.EntrevueSpringBootApplication [main] Started EntrevueSpringBootApplication in 6.778 seconds (JVM running for 7.704)
