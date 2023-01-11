@@ -2,6 +2,17 @@ package com.example.entrevueSpringBoot.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+/**
+ * @author MAISON
+ *
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class ActeurDtoIn {
 
 	@JsonProperty("nom")
