@@ -1,16 +1,20 @@
-package com.example.entrevueSpringBoot.services;
+package com.example.entrevuespringboot.services;
 
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.entrevueSpringBoot.dtos.FilmDtoIn;
-import com.example.entrevueSpringBoot.dtos.FilmDtoOut;
-import com.example.entrevueSpringBoot.entites.Film;
-import com.example.entrevueSpringBoot.entites.FilmRepository;
-import com.example.entrevueSpringBoot.mappers.FilmsMapper;
+import com.example.entrevuespringboot.dtos.FilmDtoIn;
+import com.example.entrevuespringboot.dtos.FilmDtoOut;
+import com.example.entrevuespringboot.entites.Film;
+import com.example.entrevuespringboot.entites.FilmRepository;
+import com.example.entrevuespringboot.mappers.FilmsMapper;
 
+
+/**
+ * @author MAISON
+ *
+ */
 @Service
 public class FilmServiceImpls implements FilmService {
 

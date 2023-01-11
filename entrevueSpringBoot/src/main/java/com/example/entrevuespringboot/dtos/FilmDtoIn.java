@@ -1,4 +1,4 @@
-package com.example.entrevueSpringBoot.dtos;
+package com.example.entrevuespringboot.dtos;
 
 import java.util.Set;
 

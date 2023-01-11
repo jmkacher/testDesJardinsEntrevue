@@ -1,13 +1,13 @@
-package com.example.entrevueSpringBoot.mappers;
+package com.example.entrevuespringboot.mappers;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-import com.example.entrevueSpringBoot.dtos.ActeurDtoOut;
-import com.example.entrevueSpringBoot.dtos.FilmDtoIn;
-import com.example.entrevueSpringBoot.dtos.FilmDtoOut;
-import com.example.entrevueSpringBoot.entites.Acteur;
-import com.example.entrevueSpringBoot.entites.Film;
+import com.example.entrevuespringboot.entites.Acteur;
+import com.example.entrevuespringboot.entites.Film;
+import com.example.entrevuespringboot.dtos.ActeurDtoOut;
+import com.example.entrevuespringboot.dtos.FilmDtoIn;
+import com.example.entrevuespringboot.dtos.FilmDtoOut;
 
 @Mapper(componentModel = "spring")
 public interface FilmsMapper {

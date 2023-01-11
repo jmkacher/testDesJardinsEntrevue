@@ -1,7 +1,6 @@
-package com.example.entrevueSpringBoot.controlleurs;
+package com.example.entrevuespringboot.web;
 
-import java.util.HashSet;
-import java.util.Set;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.entrevueSpringBoot.dtos.FilmDtoIn;
-import com.example.entrevueSpringBoot.dtos.FilmDtoOut;
-import com.example.entrevueSpringBoot.services.FilmService;
+import com.example.entrevuespringboot.dtos.FilmDtoIn;
+import com.example.entrevuespringboot.dtos.FilmDtoOut;
+import com.example.entrevuespringboot.services.FilmService;
 
 /**
  * @author MAISON
@@ -38,35 +37,35 @@ public class FilmControlleur {
 		try {
 			FilmDtoOut out = filmservices.ajouterFilm(fin);
 
-			logger.info("######film cree#### \n" + out.toString());
+			logger.info("film cree :{}" ,out);
 
-			return new ResponseEntity<Object>(out, HttpStatus.CREATED);
+			return new ResponseEntity<>(out, HttpStatus.CREATED);
 		} catch (RuntimeException e) {
 			logger.error("###### erreur ####", e);
-			return new ResponseEntity<Object>(null, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(new Object(), HttpStatus.BAD_REQUEST);
 
 		}
 
 	}
 
-	@GetMapping(path ="/{Id}")
-	public ResponseEntity<Object> recupererInfoFilm(@PathVariable Long Id) {
+	@GetMapping(path ="/{id}")
+	public ResponseEntity<Object> recupererInfoFilm(@PathVariable Long id) {
 		
 		try {
-			FilmDtoOut out = filmservices.recupererFilmoparId(Id);
+			FilmDtoOut out = filmservices.recupererFilmoparId(id);
 
-			logger.info("######film Trouvee avec id : " + Id +"#### \n" + out.toString());
+			logger.info("######film Trouvee :{}" , out);
 
-			return new ResponseEntity<Object>(out, HttpStatus.OK);
+			return new ResponseEntity<>(out, HttpStatus.OK);
 		} 
 		catch ( java.util.NoSuchElementException e) {
-			logger.info("######film avec identifiant : " + Id + " n existe pas en base#### \n", e);
-			return new ResponseEntity<Object>("film  avec id : "+ Id +" n existe pas " , HttpStatus.NOT_FOUND);
+			logger.info("######film avec identifiant : " + id + " n existe pas en base#### \n", e);
+			return new ResponseEntity<>("film  avec id : "+ id +" n existe pas " , HttpStatus.NOT_FOUND);
 
 		}
 		catch (RuntimeException e) {
 			logger.error("###### erreur tech ####", e);
-			return new ResponseEntity<Object>(null, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>( HttpStatus.BAD_REQUEST);
 
 		}
 		
