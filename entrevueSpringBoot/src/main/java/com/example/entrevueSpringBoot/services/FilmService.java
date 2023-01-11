@@ -11,7 +11,7 @@ public interface FilmService {
 	
 	
 	
-	public Optional<Film> recupererFilmoparId( Long identifiant ) ;
+	public FilmDtoOut recupererFilmoparId( Long identifiant ) ;
 	
 	public FilmDtoOut ajouterFilm(FilmDtoIn filnIn) ;
 
