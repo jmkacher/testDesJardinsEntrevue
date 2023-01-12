@@ -40,8 +40,8 @@ public class Film {
 	private String description ;
 	
 	@ManyToMany(cascade = { CascadeType.ALL } )
-	@JoinTable(name = "acteurs_films", joinColumns = { @JoinColumn(name = "id_acteur") }, inverseJoinColumns = {
-			@JoinColumn(name = "id_film") })
+	@JoinTable(name = "acteurs_films", joinColumns = { @JoinColumn(name = "id_film") }, inverseJoinColumns = {
+			@JoinColumn(name = "id_acteur") })
 	private Set<Acteur> acteurs ;
 	
 

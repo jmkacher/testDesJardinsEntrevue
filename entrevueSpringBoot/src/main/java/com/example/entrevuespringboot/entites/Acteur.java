@@ -25,7 +25,7 @@ import lombok.NoArgsConstructor;
 public class Acteur {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "acteur_id")
+	@Column(name = "id_acteur")
 	private Long identifiant ;
 	
 	private String nom ;
